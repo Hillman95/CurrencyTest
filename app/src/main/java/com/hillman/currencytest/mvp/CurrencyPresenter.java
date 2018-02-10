@@ -1,22 +1,11 @@
 package com.hillman.currencytest.mvp;
 
-import android.os.Handler;
 
 import com.hillman.currencytest.api.model.Currency;
-
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.concurrent.TimeUnit;
-
-import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Function;
-import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 
 /**
@@ -43,8 +32,6 @@ public class CurrencyPresenter {
 
     public void viewIsReady() {
         loadCurrenciesList();
-
-
     }
 
     public void loadCurrenciesList() {
@@ -52,9 +39,7 @@ public class CurrencyPresenter {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<List<Currency>>() {
                     @Override
-                    public void onSubscribe(Disposable d) {
-
-                    }
+                    public void onSubscribe(Disposable d) {}
 
                     @Override
                     public void onNext(List<Currency> currencies) {
@@ -62,15 +47,10 @@ public class CurrencyPresenter {
                     }
 
                     @Override
-                    public void onError(Throwable e) {
-
-                    }
+                    public void onError(Throwable e) {}
 
                     @Override
-                    public void onComplete() {
-
-                    }
-
+                    public void onComplete() {}
                 });
 
     }

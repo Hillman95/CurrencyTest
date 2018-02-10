@@ -13,8 +13,7 @@ public class CurrencyModel {
 
     public static CurrencyModel instance;
 
-    public CurrencyModel() {
-    }
+    public CurrencyModel() {}
 
     public static CurrencyModel getInstance() {
         if (instance == null) {
@@ -29,8 +28,6 @@ public class CurrencyModel {
                     List<Currency> currencies = stocks.currencies;
                     return currencies;
                 });
-    }
+        }
 
-
-
-}
+ }
