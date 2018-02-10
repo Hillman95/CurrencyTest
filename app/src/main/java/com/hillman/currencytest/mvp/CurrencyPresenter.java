@@ -43,7 +43,8 @@ public class CurrencyPresenter {
 
                     @Override
                     public void onNext(List<Currency> currencies) {
-                        view.listInit(currencies);
+                        if (view!=null){
+                        view.listInit(currencies);}
                     }
 
                     @Override
@@ -57,9 +58,9 @@ public class CurrencyPresenter {
 
 
     public void updateCurrenciesList(){
+        if (view!=null){
         view.listUpdate();
-        loadCurrenciesList();
+        loadCurrenciesList();}
     }
-
 
 }
