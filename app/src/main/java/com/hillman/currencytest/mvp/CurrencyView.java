@@ -39,7 +39,6 @@ public class CurrencyView extends AppCompatActivity {
         presenter = new CurrencyPresenter(model);
         presenter.attachView(this);
         presenter.viewIsReady();
-       // updateListByInterval();
 
     }
 
@@ -53,16 +52,6 @@ public class CurrencyView extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new DividerItemDecoration(this));
 
-    }
-
-    public void updateListByInterval() {
-        handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                presenter.updateCurrenciesList();
-                handler.postDelayed(this, 15000);
-            }
-        }, 15000);
     }
 
 

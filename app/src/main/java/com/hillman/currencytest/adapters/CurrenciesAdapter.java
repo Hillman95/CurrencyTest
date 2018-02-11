@@ -1,15 +1,13 @@
 package com.hillman.currencytest.adapters;
 
-import android.content.Context;
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.hillman.currencytest.R;
 import com.hillman.currencytest.api.model.Currency;
-
 import java.util.List;
 
 /**
@@ -49,8 +47,8 @@ public class CurrenciesAdapter extends RecyclerView.Adapter<CurrenciesAdapter.It
     public void onBindViewHolder(final CurrenciesAdapter.ItemViewHolder holder, final int position) {
         Currency currency = currencies.get(position);
         holder.name.setText(currency.getName());
-        holder.price.setText("Price : " + currency.getVolume());
-        holder.amount.setText("Vol : " + currency.getPrice().getAmount());
+        holder.price.setText("Price : " + currency.volume);
+        holder.amount.setText("Vol : " + currency.price.amount);
     }
     @Override
     public int getItemCount() {

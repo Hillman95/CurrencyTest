@@ -9,6 +9,7 @@ import io.reactivex.Observable;
  * Created by hllman on 09.02.18.
  */
 
+
 public class CurrencyModel {
 
     public static CurrencyModel instance;

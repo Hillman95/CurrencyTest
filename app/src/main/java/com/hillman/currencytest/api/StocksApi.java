@@ -1,9 +1,7 @@
 package com.hillman.currencytest.api;
 
 import com.hillman.currencytest.api.model.Stock;
-
 import io.reactivex.Observable;
-import io.reactivex.Single;
 import retrofit2.http.GET;
 
 /**
