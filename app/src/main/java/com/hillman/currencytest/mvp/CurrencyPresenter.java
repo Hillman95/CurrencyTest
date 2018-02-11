@@ -52,7 +52,7 @@ public class CurrencyPresenter {
         dispose(disposable);
 
         disposable = Observable
-                .interval(5, TimeUnit.SECONDS)
+                .interval(15, TimeUnit.SECONDS)
                 .observeOn(AndroidSchedulers.mainThread())
                 .doOnNext(aLong -> {
                     view.listUpdate();
