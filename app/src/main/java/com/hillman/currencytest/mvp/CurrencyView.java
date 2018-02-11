@@ -39,7 +39,7 @@ public class CurrencyView extends AppCompatActivity {
         presenter = new CurrencyPresenter(model);
         presenter.attachView(this);
         presenter.viewIsReady();
-        updateListByInterval();
+       // updateListByInterval();
 
     }
 

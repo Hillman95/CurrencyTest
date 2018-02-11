@@ -36,5 +36,6 @@ dependencies {
     implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.1.9'
     implementation group: 'io.reactivex.rxjava2', name: 'rxandroid', version: '2.0.1'
     implementation group: 'com.squareup.retrofit2', name: 'adapter-rxjava2', version: '2.3.0'
+    compile 'com.android.support:support-v4:27.0.2'
     compile 'com.android.support:design:27.0.2'
 }
