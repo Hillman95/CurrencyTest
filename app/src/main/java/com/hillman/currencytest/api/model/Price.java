@@ -14,10 +14,10 @@ public class Price {
     @SerializedName("currency")
     @Expose
     @Getter
-    public String currency;
+    private String currency;
     @SerializedName("amount")
     @Expose
     @Getter
-    public Double amount;
+    private Double amount;
 
 }

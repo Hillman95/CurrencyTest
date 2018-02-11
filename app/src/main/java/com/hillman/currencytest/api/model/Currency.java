@@ -5,10 +5,6 @@ package com.hillman.currencytest.api.model;
  */
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.hillman.currencytest.api.model.Price;
-
-import java.util.HashMap;
-import java.util.Map;
 import lombok.Getter;
 
 public class Currency {
@@ -16,23 +12,23 @@ public class Currency {
     @SerializedName("name")
     @Expose
     @Getter
-    public String name;
+    private String name;
     @SerializedName("price")
     @Expose
     @Getter
-    public Price price;
+    private Price price;
     @SerializedName("percent_change")
     @Expose
     @Getter
-    public Double percentChange;
+    private Double percentChange;
     @SerializedName("volume")
     @Expose
     @Getter
-    public Integer volume;
+    private Integer volume;
     @SerializedName("symbol")
     @Expose
     @Getter
-    public String symbol;
+    private String symbol;
 
 }
 

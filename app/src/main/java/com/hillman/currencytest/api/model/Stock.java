@@ -14,10 +14,10 @@ public class Stock {
     @SerializedName("stock")
     @Expose
     @Getter
-    public List<Currency> currencies = null;
+    private List<Currency> currencies = null;
     @SerializedName("as_of")
     @Expose
     @Getter
-    public String asOf;
+    private String asOf;
 
 }

@@ -47,8 +47,8 @@ public class CurrenciesAdapter extends RecyclerView.Adapter<CurrenciesAdapter.It
     public void onBindViewHolder(final CurrenciesAdapter.ItemViewHolder holder, final int position) {
         Currency currency = currencies.get(position);
         holder.name.setText(currency.getName());
-        holder.price.setText("Price : " + currency.volume);
-        holder.amount.setText("Vol : " + currency.price.amount);
+        holder.price.setText("Price : " + currency.getVolume());
+        holder.amount.setText("Vol : " + currency.getPrice().getAmount());
     }
     @Override
     public int getItemCount() {
